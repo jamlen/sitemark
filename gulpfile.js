@@ -29,7 +29,10 @@ gulp.task('lint', function(){
 // gulp for running the mocha tests with default dot reporter
 gulp.task('test', function(){
 	gulp.src(paths.tests)
-		.pipe(mocha({reporter: 'dot'}))
+		.pipe(mocha({
+            require: 'should',
+            reporter: 'spec'
+        }))
 		.on('error', handleError);
 
 });
