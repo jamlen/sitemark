@@ -1,0 +1,17 @@
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.tgz
+.DS_Store
+Thumbs.db
+
+pids
+logs
+results
+
+*debug.log
+node_modules/

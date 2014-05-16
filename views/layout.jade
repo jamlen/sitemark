@@ -1,0 +1,29 @@
+include ./partials/nav
+
+html(lang='en')
+    head
+        title= config.title
+        link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css')
+        link(href='/css/styles/'+config.style+'.css', rel='stylesheet', type='text/css')
+        link(href='/css/app.css', rel='stylesheet', type='text/css')
+        script(type='text/javascript', src='/js/jquery.min.js')
+        script(type='text/javascript', src='/js/bootstrap.min.js')
+        script(type='text/javascript', src='/js/highlight.pack.js')
+        script(type='text/javascript', src='/js/keyboard-shortcuts.js')
+
+    body
+        .container
+            +nav(nav)
+            .span10.offset1
+                header
+                    a(href='/')
+                        span
+                            img(src=config.gravatar)
+                    h1= config.title
+                    hr
+                block content
+            .span10.offset1.footer
+                | powered by
+                a(href='https://github.com/martinrue/codeblog', target='_blank') codeblog
+    script.
+        hljs.initHighlightingOnLoad();

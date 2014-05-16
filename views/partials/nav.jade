@@ -1,0 +1,25 @@
+mixin nav(nav)
+
+    nav.navbar.navbar-default(role='navigation')
+        .container-fluid
+            .navbar-header
+                button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href='/') Brand
+            #bs-example-navbar-collapse-1.collapse.navbar-collapse
+                ul.nav.navbar-nav
+                    each section in nav
+                        if section.pages.length > 0
+                            li.dropdown
+                                a.dropdown-toggle(href=section.section.url, data-toggle='dropdown')= section.section.label
+                                    b.caret
+                                ul.dropdown-menu
+                                    each page in section.pages
+                                        li
+                                            a(href=page.url)= page.label
+                        else
+                            li
+                                a(href=section.section.url)= section.section.label

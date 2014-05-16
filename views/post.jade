@@ -1,0 +1,11 @@
+extend ./layout.jade
+
+block content
+    .post-container
+        h2
+            a(href=blog.url)= blog.title
+        .post!= blog.post
+        .post-footer
+            h3= blog.relativeDate
+            each tag in blog.tags
+                .tag= tag
