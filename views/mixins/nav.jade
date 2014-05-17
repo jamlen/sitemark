@@ -1,4 +1,4 @@
-mixin nav(nav)
+mixin nav
 
     nav.navbar.navbar-inverse(role='navigation')
         .container-fluid
@@ -8,7 +8,7 @@ mixin nav(nav)
                     span.icon-bar
                     span.icon-bar
                     span.icon-bar
-                a.navbar-brand(href='/') Brand
+                a.navbar-brand(href='/')= config.brand
             #bs-example-navbar-collapse-1.collapse.navbar-collapse
                 ul.nav.navbar-nav
                     each section in nav
