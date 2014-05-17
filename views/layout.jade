@@ -1,11 +1,12 @@
-include ./partials/nav
+include ./mixins/nav
 
 html(lang='en')
     head
         title= config.title
-        link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css')
-        link(href='/css/styles/'+config.style+'.css', rel='stylesheet', type='text/css')
-        link(href='/css/app.css', rel='stylesheet', type='text/css')
+        link(rel='stylesheet', type='text/css', href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css')
+        link(rel='stylesheet', type='text/css', href='/css/styles/'+config.style+'.css')
+        link(rel='stylesheet', type='text/css', href='http://bootswatch.com/yeti/bootstrap.min.css')
+        link(rel='stylesheet', type='text/css', href='/css/app.css')
         script(type='text/javascript', src='/js/jquery.min.js')
         script(type='text/javascript', src='/js/bootstrap.min.js')
         script(type='text/javascript', src='/js/highlight.pack.js')
@@ -23,7 +24,7 @@ html(lang='en')
                     hr
                 block content
             .span10.offset1.footer
-                | powered by
-                a(href='https://github.com/martinrue/codeblog', target='_blank') codeblog
+                | powered by&nbsp;
+                a(href='https://github.com/jamlen/sitemark', target='_blank') sitemark
     script.
         hljs.initHighlightingOnLoad();

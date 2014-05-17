@@ -4,7 +4,7 @@ var crypto = require('crypto');
 
 module.exports = {
     email: 'code@james-allen.co.uk',
-    title: 'SiteMark Markdown powered websites',
+    title: 'SiteMark - Markdown powered websites',
     style: 'monokai'
 };
 

@@ -1,6 +1,20 @@
 # sitemark
 Convention based, simple website using Markdown. Branched from the super simple [codeblog](https://github.com/martinrue/codeblog) by [Martin Rue](https://github.com/martinrue)
 
+## Websites based upon code-blog
+
+Take the simplified principles of [code-blog](https://github.com/martinrue/codeblog) and build a simple website CMS from it. (CMS in very loose terms!)
+
+## Installation
+
+> __NOTE:__ This has not been pushed to the npm registry yet, please just `git clone` until then...
+
+Installation is simple:
+
+1. Run `npm install sitemark`
+2. Edit the [`config.js`](#config)
+3. Use your node process runner of choice, or `node sitemark.js`
+4. Browse
 
 ## How
 Simply create `your-blog-post.md` files in the `/content` directory and you're done. GitHub flavoured markdown is supported and code blocks are automatically highlighted.
@@ -70,7 +84,7 @@ Simply clone the repo, install dependencies and run `node sitemark.js`:
 
 ```
 git clone git@github.com:jamlen/sitemark.git
-cd codeblog
+cd sitemark
 npm install
 node sitemark.js
 ```

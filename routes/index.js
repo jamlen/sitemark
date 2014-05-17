@@ -27,6 +27,15 @@ var routes = function(app) {
         res.render('all', { blogs: all, config: config, nav: nav });
     });
 
+    app.get('/tag/:tag', function(req, res, next){
+        var articles = blogs.findByTag(req.param('tag'))
+
+        if (articles.length === 0) {
+            return res.render('help', { config: config, nav: nav });
+        }
+        res.render('all', { blogs: articles, config: config, nav: nav });
+    });
+
     app.get('/*', function(req, res, next) {
         var blog = blogs.find(req.url);
 

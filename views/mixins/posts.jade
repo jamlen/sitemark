@@ -1,0 +1,10 @@
+mixin post-footer(post)
+
+    .post-footer
+        h3= post.relativeDate
+        each tag in post.tags
+            a.tag.btn.btn-primary.btn-sm(href='/tag/'+tag)=tag
+
+mixin post-title(post)
+    h2
+        a(href=post.url)= post.title
