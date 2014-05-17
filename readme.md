@@ -1,9 +1,31 @@
 # sitemark
 Convention based, simple website using Markdown. Branched from the super simple [codeblog](https://github.com/martinrue/codeblog) by [Martin Rue](https://github.com/martinrue)
 
+<p align="center">
+  <a href="http://code.martinrue.com">
+    <img src="https://github.com/jamlen/sitemark/raw/master/screenshot.png" />
+  </a>
+</p>
+
 ## Websites based upon code-blog
 
-Take the simplified principles of [code-blog](https://github.com/martinrue/codeblog) and build a simple website CMS from it. (CMS in very loose terms!)
+Take the simplified principles of [code-blog](https://github.com/martinrue/codeblog) and build a simple website CMS from it. (CMS in very loose terms!) This gives a simple, conventionalised structure
+and editors only need to learn how to edit markdown. Especially if they use a tool which can publish direct to github, like the excellent [stackedit](https://stackedit.io).
+
+If links to images are required then either use a cloud service like [cloudinary](https://cloudinary.com), or add them into `./public/img/content` and then use a relative link in the markdown.
+For a file uploaded to:
+
+```
+.
+└── public
+    └── img
+        └── my-image-001.png
+```
+You would reference it in markdown as:
+
+<pre>
+![alt text](/img/my-image-001.png "Title")
+</pre>
 
 ## Installation
 
@@ -25,19 +47,19 @@ The navigation menu is driven from the folder structure you choose inside `/cont
 ```
 .
 └── content
-    ├── section-3						<- menu created
-    │   ├── subsection-1				<- menu created
+    ├── section-3                     <- menu created
+    │   ├── subsection-1              <- menu created
     │   │   └── article-005.md
-    │   └── subsection-2				<- menu created
+    │   └── subsection-2              <- menu created
     │       ├── article-002.md
     │       ├── article-003.md
     │       └── article-001.md
-    ├── section-2						<- menu created
-    │   └── subsection-1				<- menu created
+    ├── section-2                     <- menu created
+    │   └── subsection-1              <- menu created
     │       └── subsubsection-1
     │       │   └── article-006.md
     │       └── article-006.md
-    └── section-3						<- menu created
+    └── section-3                     <- menu created
         └── article-004.md
 ```
 
