@@ -1,6 +1,6 @@
 {
   "name": "sitemark",
-  "version": "0.0.1",
+  "version": "0.0.1-alpha",
   "description": "Convention based, simple website using Markdown",
   "main": "sitemark.js",
   "homepage": "https://github.com/jamlen/sitemark",

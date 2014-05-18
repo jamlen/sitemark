@@ -18,13 +18,19 @@ var routes = function(app) {
 
 
     app.get('/', function(req, res) {
-        var all = blogs.find();
+        var articles = blogs.findByTag('communities');
 
-        if (all.length === 0) {
+        if (articles.length === 0) {
             return res.render('help', { config: config, nav: nav });
         }
+        articles = articles.sortBy(function(article){ return article.date * -1; })
 
-        res.render('all', { blogs: all, config: config, nav: nav });
+        var template = blogs.findTemplate(req.url);
+        if (template) {
+            return res.render(template.use, { template: template, blogs: articles, config: config, nav: nav });
+        }
+
+        res.render('all', { blogs: articles, config: config, nav: nav });
     });
 
     app.get('/tag/:tag', function(req, res, next){
@@ -43,6 +49,11 @@ var routes = function(app) {
             return next();
         }
         if (_.isArray(blog)) {
+            var template = blogs.findTemplate(req.url);
+            console.log('template:', template);
+            if (template) {
+                return res.render(template.use, { template: template, blogs: blog, config: config, nav: nav });
+            }
             if (blog.length === 0) {
                 return res.render('help', { config: config, nav: nav });
             }
