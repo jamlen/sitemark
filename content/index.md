@@ -1,10 +1,5 @@
 use: home
-title: Super simple websites built with MarkDown | SiteMark
----
-section: about
-===
-# About us section
-This is some text to go into the about section of the template
+title: Super simple websites built with MarkDown
 ---
 section: headline
 ===
