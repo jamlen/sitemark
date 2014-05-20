@@ -21,25 +21,25 @@ var routes = function(app) {
         var articles = blogs.findByTag('communities');
 
         if (articles.length === 0) {
-            return res.render('help', { config: config, nav: nav });
+            return res.render('help', { title: config.title, config: config, nav: nav });
         }
         articles = articles.sortBy(function(article){ return article.date * -1; })
 
         var template = blogs.findTemplate(req.url);
         if (template) {
-            return res.render(template.use, { template: template, blogs: articles, config: config, nav: nav });
+            return res.render(template.use, { title: template.title, template: template, blogs: articles, config: config, nav: nav });
         }
 
-        res.render('all', { blogs: articles, config: config, nav: nav });
+        res.render('all', { title: config.title, blogs: articles, config: config, nav: nav });
     });
 
     app.get('/tag/:tag', function(req, res, next){
         var articles = blogs.findByTag(req.param('tag'))
 
         if (articles.length === 0) {
-            return res.render('help', { config: config, nav: nav });
+            return res.render('help', { title: config.title, config: config, nav: nav });
         }
-        res.render('all', { blogs: articles, config: config, nav: nav });
+        res.render('all', { title: config.title, blogs: articles, config: config, nav: nav });
     });
 
     app.get('/*', function(req, res, next) {
@@ -50,16 +50,15 @@ var routes = function(app) {
         }
         if (_.isArray(blog)) {
             var template = blogs.findTemplate(req.url);
-            console.log('template:', template);
             if (template) {
-                return res.render(template.use, { template: template, blogs: blog, config: config, nav: nav });
+                return res.render(template.use, { title: template.title, template: template, blogs: blog, config: config, nav: nav });
             }
             if (blog.length === 0) {
-                return res.render('help', { config: config, nav: nav });
+                return res.render('help', { title: config.title, config: config, nav: nav });
             }
-            return res.render('all', { blogs: blog, config: config, nav: nav });
+            return res.render('all', { title: config.title, blogs: blog, config: config, nav: nav });
         }
-        res.render('post', { blog: blog, config: config, nav: nav });
+        res.render('post', { title: blog.title, blog: blog, config: config, nav: nav });
     });
 };
 

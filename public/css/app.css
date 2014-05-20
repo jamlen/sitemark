@@ -1,7 +1,7 @@
+html { font-size: 62.5%; }
 body {
-  font: 200 22px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height: 35px;
-  color: #555;
+  font-size: 1.6rem;
+  line-height: 150%;
 }
 
 header {
@@ -36,25 +36,10 @@ header a span img {
 }
 
 header h1 {
-  font: 100 45px;
+  /*font: 100 45px;*/
+  font-size: 3.6rem;
   color: #555;
   margin: 0;
-}
-
-h2 {
-  font: 400 30px;
-  margin: 0 0 20px 0;
-  color: #555;
-}
-
-h3 {
-  padding-top: 5px;
-  font: 200 20px;
-  color: #bbb;
-}
-
-.post-container {
-  padding: 25px 0;
 }
 
 a {
@@ -67,25 +52,28 @@ a:hover {
   color: #00bfff;
 }
 
-p {
-  margin: 0 0 20px 0;
-}
-
 p a {
   color: #00bfff;
 }
 
+h2 {
+  font-size: 2.8rem;
+}
+
+p {
+  line-height: 150%;
+}
+
 .post h1, .post h2, .post h3, .post h4, .post h5 {
-  font-size: 22px;
-  line-height: 35px;
-  padding: 0;
-  margin: 0;
+}
+
+.post-container {
+  padding: 15px 0;
 }
 
 .post-preview {
-  color: #888;
-  font-size: 22px;
   margin-top: -5px;
+  font-size: 1.8rem;
 }
 
 .post-footer {
@@ -103,13 +91,12 @@ p a {
 }
 
 blockquote p {
-  font: 200 22px;
-  line-height: 35px;
+  /*line-height: 35px;*/
   color: #888;
 }
 
 li {
-  line-height: 35px;
+  /*line-height: 35px;*/
 }
 
 pre {
@@ -127,8 +114,6 @@ pre code {
 }
 
 .info {
-  font: 200 26px;
-  line-height: 40px;
   padding: 20px 0;
   color: #666;
 }
@@ -147,8 +132,6 @@ pre code {
 }
 
 p code {
-  font-weight: 200;
-  font-size: 18px;
   color: #555;
   text-shadow: 1px 1px 1px #fff;
 }

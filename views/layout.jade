@@ -2,10 +2,7 @@ include ./mixins/nav
 
 html(lang='en')
     head
-        if template
-            title= template.title + ' | '+ config.brand
-        else
-            title= config.title + ' | '+ config.brand
+        title= title + ' | '+ config.brand
         link(rel='stylesheet', type='text/css', href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css')
         link(rel='stylesheet', type='text/css', href='/css/styles/'+config.style+'.css')
         link(rel='stylesheet', type='text/css', href='http://bootswatch.com/yeti/bootstrap.min.css')

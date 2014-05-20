@@ -3,9 +3,9 @@ include ./mixins/posts
 
 block content
     .jumbotron
-        !{template.sections.welcome}
+        != template.sections.welcome
     .panel.panel-default
-        !{template.sections.headline}
+        != template.sections.headline
     .panel.panel-default
         .panel-heading
             h2 Latest Articles...
