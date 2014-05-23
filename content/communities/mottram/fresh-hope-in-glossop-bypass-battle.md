@@ -2,7 +2,7 @@ tags: communities mottram bypass
 title: Fresh hope in Glossop bypass battle
 preview: The government promises to look again at ways to ease traffic congestion through Glossop
 date: May 12 2014
-
+image: http://i2.manchestereveningnews.co.uk/news/local-news/article4863441.ece/alternates/s615/Traffic-congestion-through-Glossop.jpg
 ---
 ![](http://i2.manchestereveningnews.co.uk/news/local-news/article4863441.ece/alternates/s615/Traffic-congestion-through-Glossop.jpg)
 
