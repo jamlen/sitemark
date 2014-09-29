@@ -6,7 +6,8 @@ module.exports = {
     email: 'code@james-allen.co.uk',
     brand: 'SiteMark',
     title: 'SiteMark - Markdown powered websites',
-    style: 'monokai'
+    style: 'monokai',
+	dateFormat: 'YYYY-MM-dd'
 };
 
 var gravatarHash = crypto.createHash('md5').update(module.exports.email).digest('hex');

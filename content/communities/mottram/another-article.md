@@ -1,7 +1,7 @@
 tags: communities mottram
 title: Another Mottram article
 preview: Some long text with __formatting__.
-date: May 19 2014
+date: 2014-05-14
 
 ---
 # Fresh hope in Glossop bypass battle

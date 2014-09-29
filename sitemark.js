@@ -2,23 +2,21 @@
 
 var http = require('http');
 var express = require('express');
+var errorHandler = require('errorhandler');
 
 var app = express();
 
-app.configure(function() {
-    app.set('view engine', 'jade');
-    app.set('layout', true);
-    app.use(express.static(__dirname + '/public'));
-    app.use(app.router);
-});
+app.set('view engine', 'jade');
+app.set('layout', true);
+app.use(express.static(__dirname + '/public'));
 
-app.configure('development', function() {
-    app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
-});
+if ('development' == app.get('env')) {
+    app.use(errorHandler({ dumpExceptions: true, showStack: true }));
+}
 
-app.configure('production', function() {
-    app.use(express.errorHandler());
-});
+if ('production' == app.get('env')) {
+    app.use(errorHandler());
+}
 
 require('./routes/index')(app);
 require('./routes/404')(app);
