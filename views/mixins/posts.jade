@@ -1,10 +1,25 @@
-mixin post-footer(post)
+mixin post-footer(post, hideDate)
 
     .post-footer
-        h3= post.relativeDate
+        if !hideDate
+            h3
+                =post.relativeDate
+                if post.author
+                    span
+                        |&nbsp;by&nbsp;
+                        =post.author
+                end
+        end
         each tag in post.tags
             a.tag.btn.btn-primary.btn-sm(href='/tag/'+tag)=tag
 
 mixin post-title(post)
     h1
         a(href=post.url)= post.title
+
+mixin post-preview(post, hideDate)
+    .post-container
+        +post-title(post)
+        if !hideDate
+            .post-preview!= post.preview
+        +post-footer(post, hideDate)

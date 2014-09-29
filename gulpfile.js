@@ -42,7 +42,7 @@ gulp.task('test', function(){
  * auto/watch gulp tasks that will trigger the tests on
  * file changes
  */
-gulp.task('autotest', function(){
+gulp.task('watch', function(){
 	gulp.watch(paths.src.concat(paths.tests), ['lint','test']);
 });
 

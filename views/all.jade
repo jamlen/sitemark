@@ -3,7 +3,4 @@ include ./mixins/posts
 
 block content
     each post in blogs
-        .post-container
-            +post-title(post)
-            .post-preview!= post.preview
-            +post-footer(post)
+        +post-preview(post)

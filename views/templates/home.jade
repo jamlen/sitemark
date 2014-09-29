@@ -1,0 +1,24 @@
+extend ../layout.jade
+include ../mixins/posts
+
+block content
+    .jumbotron
+        != template.sections.welcome
+    .panel.panel-default
+        != template.sections.headline
+    .panel.panel-default
+        .panel-heading
+            h2 Latest Articles
+        .panel-body
+            .row
+                - for (var i = 0; i < 3; ++i) {
+                    .col-sm-6.col-md-4
+                        .thumbnail
+                            if blogs[i].image
+                                img.img-responsive(src=blogs[i].image, alt=blogs[i].title)
+                            else
+                                img.img-responsive(src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjE1MCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE5cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MzAweDIwMDwvdGV4dD48L3N2Zz4=')
+                            end
+                            .caption
+                                +post-preview(blogs[i], true)
+                - }

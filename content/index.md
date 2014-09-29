@@ -4,7 +4,7 @@ title: Super simple websites built with MarkDown
 section: headline
 ===
 # Headline
-This is a headline
+This text is coming from the `/content/index.md` to demonstrate using templates and sections.
 ---
 section: welcome
 ===
