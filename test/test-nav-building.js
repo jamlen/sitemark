@@ -1,12 +1,20 @@
 'use strict';
 
 require('should');
+var path = require('path');
 var builder = require('../lib/navBuilder');
 
-describe.skip('NavigationBuilder', function(){
+describe('NavigationBuilder', function(){
+	var nav;
 
-    it('builds', function(done){
+    beforeEach(function(done){
+        builder.init({contentPath: path.join(__dirname, 'support', 'nav')}, function(navigation){
+			nav = navigation;
+            done();
+        });
+    });
 
+	it('builds', function(){
         var expected = [
         {
             section: { label: 'Section1', url: '/section1'},
@@ -31,12 +39,7 @@ describe.skip('NavigationBuilder', function(){
             section: { label: 'Section4', url: '/section4'},
             pages: []
         }];
-
-        builder.init({contentPath: __dirname + '/../content/'}, function(){
-            var nav = builder.get();
-            console.log(JSON.stringify(nav, undefined, 2));
-            nav.should.equal(expected);
-            done();
-        });
-    });
+		
+        nav.should.eql(expected);
+	});
 });

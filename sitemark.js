@@ -10,11 +10,11 @@ app.set('view engine', 'jade');
 app.set('layout', true);
 app.use(express.static(__dirname + '/public'));
 
-if ('development' == app.get('env')) {
+if ('development' === app.get('env')) {
     app.use(errorHandler({ dumpExceptions: true, showStack: true }));
 }
 
-if ('production' == app.get('env')) {
+if ('production' === app.get('env')) {
     app.use(errorHandler());
 }
 
