@@ -1,6 +1,6 @@
 'use strict';
 
-require('should');
+var should = require('should');
 var path = require('path');
 var articles = require('../lib/blogs');
 
@@ -29,6 +29,29 @@ describe('Finding Articles', function(){
 
 		it('finds multiple articles when mutliple have been tagged', function() {
 			articles.findByTag('tag').should.have.lengthOf(2);
+		});
+	});
+
+	describe('by url', function() {
+
+		it('finds with valid url', function() {
+			var article = articles.find('section1/subsection1/test');
+			should(article).not.eql(null);
+			article.should.have.property('url', 'section1/subsection1/test');
+		});
+
+		it('does not find with invalid url', function() {
+			articles.find('invalid/url').should.be.empty;
+		});
+	});
+
+	describe('for templates', function() {
+		it('finds the template defined', function() {
+			var template = articles.findTemplate('section2/subsection1');
+			should(template).not.eql(undefined);
+			template.should.have.property('use', 'template');
+			template.should.have.property('url', 'section2/subsection1');
+			template.should.have.property('sections');
 		});
 	});
 });
