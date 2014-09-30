@@ -21,6 +21,9 @@ var routes = function(app) {
     }, function(result){
         nav = result;
     });
+	blogs.init({
+        contentPath: path.resolve(__dirname + '/../content')
+	}, function(){});
 
     function getPageWithTemplate(url, article){
         var page = 'all';
