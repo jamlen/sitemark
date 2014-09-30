@@ -40,7 +40,7 @@ gulp.task('test', function(cb){
 	        }))
 			.pipe(istanbul.writeReports())
 			.on('end', function(){
-				if (require('fs').existsSync('./.coveralls.yml')) {
+				if (process.env.COVERALLS_REPO_TOKEN) {
 					gulp.src('coverage/**/lcov.info')
 	  					.pipe(coveralls())
 						.on('end', cb);
