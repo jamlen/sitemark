@@ -3,7 +3,9 @@ var gulp = require('gulp'),
 	watch = require('gulp-watch'),
 	// changed = require('gulp-changed'),
 	mocha = require('gulp-mocha'),
-	colors = require('colors');
+	istanbul = require('gulp-istanbul'),
+	colors = require('colors'),
+	coveralls = require('gulp-coveralls');
 
 var paths = {
 	'src':['./sitemark.js', './lib/**/*.js','./routes/**/*.js'],
@@ -27,14 +29,25 @@ gulp.task('lint', function(){
 });
 
 // gulp for running the mocha tests with default dot reporter
-gulp.task('test', function(){
-	gulp.src(paths.tests)
-		.pipe(mocha({
-            require: 'should',
-            reporter: 'spec'
-        }))
-		.on('error', handleError);
-
+gulp.task('test', function(cb){
+    gulp.src(paths.src)
+	    .pipe(istanbul())
+		.on('finish', function(){
+		gulp.src(paths.tests)
+			.pipe(mocha({
+	 	        require: 'should',
+	            reporter: 'spec'
+	        }))
+			.pipe(istanbul.writeReports())
+			.on('end', function(){
+				if (require('fs').existsSync('./.coveralls.yml')) {
+					gulp.src('coverage/**/lcov.info')
+	  					.pipe(coveralls())
+						.on('end', cb);
+					}
+				})
+			.on('error', handleError);
+		});
 });
 
 
