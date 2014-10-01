@@ -77,9 +77,9 @@ Each section can use a different template for rendering. Just add an index.md wh
 The meta properties supported for template use are:
 
 | Property | Required | Description                                                                            |
-| -------- | -------- | -------------------------------------------------------------------------------------- |
+| -------- |:--------:| -------------------------------------------------------------------------------------- |
 | `use`    | yes      | the name of the template to use. These should be located in `./views/templates/*.jade` |
-| `title`  | tes      | the page title                                                                         |
+| `title`  | yes      | the page title                                                                         |
 
 Below the main meta properties are the sections. Sections also use conventions... The sections are divided by the same `---` that is used by the meta properties. 
 
