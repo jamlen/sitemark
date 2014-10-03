@@ -1,1 +1,1 @@
-web: node sitemark.js
+web: node --debug sitemark.js
