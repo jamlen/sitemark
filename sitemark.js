@@ -20,5 +20,6 @@ if ('production' === app.get('env')) {
 
 require('./routes/index')(app);
 require('./routes/404')(app);
-
-http.createServer(app).listen(process.env.PORT || 9111);
+http.createServer(app).listen(process.env.PORT || 9111, function(){
+    console.log('SiteMark started on port:', (process.env.PORT || 9111));
+});

@@ -39,7 +39,7 @@ gulp.task('test', function(cb) {
                     reporter: 'spec'
                 }))
 				.pipe(istanbul.writeReports({
-					reporters: ['lcov', 'json', 'text', 'text-summary', 'html', 'clover']
+					reporters: ['lcov', 'html', 'text-summary']
 				}))
                 .on('end', function() {
                     if (process.env.COVERALLS_REPO_TOKEN) {
