@@ -30,6 +30,7 @@ describe('Finding Articles', function(){
 		it('finds multiple articles when mutliple have been tagged', function() {
 			articles.findByTag('tag').should.have.lengthOf(5);
 		});
+
 	});
 
 	describe('by url', function() {
@@ -43,9 +44,11 @@ describe('Finding Articles', function(){
 		it('does not find with invalid url', function() {
 			articles.find('invalid/url').should.be.empty;
 		});
+
 	});
 
 	describe('for templates', function() {
+
 		it('finds the template defined', function() {
 			var template = articles.findTemplate('/section2/subsection1');
 			should(template).not.eql(undefined);
@@ -53,5 +56,7 @@ describe('Finding Articles', function(){
 			template.should.have.property('url', '/section2/subsection1');
 			template.should.have.property('sections');
 		});
+
 	});
+
 });
