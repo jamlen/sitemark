@@ -39,4 +39,6 @@ describe('Building Article List', function() {
         articles[0].should.eql(expected);
     });
 
+    it('Ignores articles that do not have required metadata');
+
 });

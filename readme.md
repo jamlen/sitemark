@@ -9,8 +9,7 @@ Convention based, simple website using Markdown. Branched from the super simple 
 
 ## Websites based upon code-blog
 
-Take the simplified principles of [code-blog](https://github.com/martinrue/codeblog) and build a simple website CMS from it. (CMS in very loose terms!) This gives a simple, conventionalised structure
-and editors only need to learn how to edit markdown. Especially if they use a tool which can publish direct to github, like the excellent [stackedit](https://stackedit.io).
+Take the simplified principles of [code-blog](https://github.com/martinrue/codeblog) and build a simple website CMS from it. (CMS in very loose terms!) This gives a simple, conventionalised structure and editors only need to learn how to edit markdown. Their workflow can be even more simplified if they use a tool which can publish direct to GitHub, like the excellent [stackedit](https://stackedit.io), as they do not have learn git. Add to this a CI environment like [CodeShip](https://www.codeship.io/) and automated deployments to some Application Hosting like [Heroku](https://www.heroku.com/), then you 'publish' an article via StackEdit and within a few minutes it is available on the site.
 
 ## How
 Simply create `your-blog-post.md` files in the `/content` directory and you're done. GitHub flavoured markdown is supported and code blocks are automatically highlighted.
@@ -109,11 +108,9 @@ section: image
 ### Code Highlighting
 To highlight a block of code, surround the code with three backticks and a language specifier:
 
-<pre>
 ```javascript
 console.log('Hello World');
 ```
-</pre>
 
 To force the code block to have no highlighting, use the language specifier `no-highlight`.
 
@@ -130,9 +127,9 @@ For a file uploaded to:
 ```
 You would reference it in markdown as:
 
-<pre>
+```markdown
 ![alt text](/img/my-image-001.png "Title")
-</pre>
+```
 
 ### Config
 Before deploying your own copy, please change the options in the [config.js](https://github.com/jamlen/sitemark/blob/master/config.js) file:
@@ -151,7 +148,7 @@ You can set the `style` config to any of the following values: `arta` `ascetic` 
 ## Running Locally
 Simply clone the repo, install dependencies and run `node sitemark.js`:
 
-```
+```bash
 git clone git@github.com:jamlen/sitemark.git
 cd sitemark
 npm install
