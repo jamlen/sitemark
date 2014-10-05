@@ -2,7 +2,7 @@
 Convention based, simple website using Markdown. Branched from the super simple [codeblog](https://github.com/martinrue/codeblog) by [Martin Rue](https://github.com/martinrue)
 
 <p align="center">
-  <a href="http://code.martinrue.com">
+  <a href="http://sitemark.io">
     <img src="https://github.com/jamlen/sitemark/raw/master/screenshot.png" />
   </a>
 </p>
