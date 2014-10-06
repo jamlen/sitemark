@@ -14,7 +14,7 @@ mixin post-footer(post, hideDate)
             a.tag.btn.btn-primary.btn-sm(href='/tag/'+tag)=tag
 
 mixin post-title(post)
-    h1
+    h2
         a(href=post.url)= post.title
 
 mixin post-preview(post, hideDate)

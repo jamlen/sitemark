@@ -42,6 +42,13 @@ header h1 {
   margin: 0;
 }
 
+header .strapline {
+  /*font: 100 45px;*/
+  font-size: 2rem;
+  color: #555;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
   color: #555;
