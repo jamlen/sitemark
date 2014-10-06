@@ -18,44 +18,71 @@ var routes = function(app) {
 
     navBuilder.init({
         contentPath: path.resolve(__dirname + '/../content')
-    }, function(result){
+    }, function(result) {
         nav = result;
     });
-	blogs.init({
+    blogs.init({
         contentPath: path.resolve(__dirname + '/../content')
-	}, function(){});
+    }, function() {});
 
-    function getPageWithTemplate(url, article){
+    function getPageWithTemplate(url, article) {
         var page = 'all';
         var title = config.title;
+        var author = article.author || config.brand;
+        var description = article.preview;
         var template = blogs.findTemplate(url);
         if (_.hasValue(template)) {
-            page = 'templates/'+template.use;
+            page = 'templates/' + template.use;
             title = template.title;
         }
-        var locals = { title: title, template: template, blogs: article, config: config, nav: nav };
-        return { page: page, locals: locals};
+        var locals = {
+            title: title,
+            author: author,
+            description: description,
+            template: template,
+            blogs: article,
+            config: config,
+            nav: nav
+        };
+        return {
+            page: page,
+            locals: locals
+        };
     }
 
     app.get('/', function(req, res) {
         var articles = blogs.findByTag('communities');
 
         if (articles.length === 0) {
-            return res.render('help', { title: config.title, config: config, nav: nav });
+            return res.render('help', {
+                title: config.title,
+                config: config,
+                nav: nav
+            });
         }
-        articles = articles.sortBy(function(article){ return article.date * -1; });
+        articles = articles.sortBy(function(article) {
+            return article.date * -1;
+        });
 
         var template = getPageWithTemplate(req.url, articles);
         res.render(template.page, template.locals);
     });
 
-    app.get('/tag/:tag', function(req, res, next){
+    app.get('/tag/:tag', function(req, res, next) {
         var articles = blogs.findByTag(req.param('tag'));
+        var title = 'Articles tagged with ' + req.param('tag');
 
         if (articles.length === 0) {
             return next();
         }
-        res.render('all', { title: config.title, blogs: articles, config: config, nav: nav });
+        res.render('all', {
+            title: title,
+            author: config.brand,
+            description: title,
+            blogs: articles,
+            config: config,
+            nav: nav
+        });
     });
 
     app.get('/*', function(req, res, next) {
@@ -68,7 +95,14 @@ var routes = function(app) {
             var template = getPageWithTemplate(req.url, blog);
             return res.render(template.page, template.locals);
         }
-        res.render('post', { title: blog.title, blog: blog, config: config, nav: nav });
+        res.render('post', {
+            title: blog.title,
+            author: blog.author || config.brand,
+            description: blog.preview,
+            blog: blog,
+            config: config,
+            nav: nav
+        });
     });
 };
 

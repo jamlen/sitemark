@@ -75,7 +75,8 @@ p {
 }
 
 .post-container {
-  padding: 15px 0;
+  padding: 0 0 5px 0;
+  border-bottom: 1px solid #eee;
 }
 
 .post-preview {
@@ -85,6 +86,7 @@ p {
 
 .post-footer {
   overflow: hidden;
+  padding: 0;
 }
 
 .post-footer h3 {
@@ -93,6 +95,7 @@ p {
 
 .post-footer .tag {
   float: right;
+  clear: left;
   margin-left: 10px;
   margin-top: 5px;
 }
