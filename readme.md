@@ -1,4 +1,6 @@
 # sitemark [![Coverage Status](https://img.shields.io/coveralls/jamlen/sitemark.svg)](https://coveralls.io/r/jamlen/sitemark?branch=master) [ ![Codeship Status for jamlen/sitemark](https://www.codeship.io/projects/7c253ce0-2a43-0132-843e-76f9ef90f262/status)](https://www.codeship.io/projects/38228)
+
+[![Join the chat at https://gitter.im/jamlen/sitemark](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jamlen/sitemark?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Convention based, simple website using Markdown. Branched from the super simple [codeblog](https://github.com/martinrue/codeblog) by [Martin Rue](https://github.com/martinrue)
 
 <p align="center">
