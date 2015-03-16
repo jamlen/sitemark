@@ -18,25 +18,24 @@ Simply create `your-blog-post.md` files in the `/content` directory and you're d
 The navigation menu is driven from the folder structure you choose inside `/content`. This currently only generates 2 levels deep and only for directories, not files. For example:
 
 ```
-.
+./
 └── content
     ├── section-1                     <- menu created
-    │   ├── subsection-1              <- menu created
-    │   │   └── article-005.md
-    │   └── subsection-2              <- menu created
-    │       ├── article-002.md
-    │       ├── article-003.md
-    │       └── article-001.md
+    │   ├── subsection-1              <- menu created
+    │   │   └── article-005.md
+    │   └── subsection-2              <- menu created
+    │       ├── article-002.md
+    │       ├── article-003.md
+    │       └── article-001.md
     ├── section-2                     <- menu created
-    │   └── subsection-1              <- menu created
-    │       └── subsubsection-1
-    │       │   └── article-006.md
-    │       └── article-006.md
+    │   └── subsection-1              <- menu created
+    │       └── subsubsection-1
+    │       │   └── article-006.md
+    │       └── article-006.md
     ├── section-3                     <- menu created
     │   └── article-004.md
     ├── section-4                     <- menu created
     │   └── index.md                  <- define template and content sections
-    ├── section-4                     <- menu created
     └── index.md                      <- defines template and content sections for homepage
 ```
 
