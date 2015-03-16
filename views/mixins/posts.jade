@@ -1,5 +1,4 @@
 mixin post-footer(post, hideDate)
-
     .post-footer
         if !hideDate
             h3
@@ -14,12 +13,12 @@ mixin post-footer(post, hideDate)
             a.tag.btn.btn-primary.btn-sm(href='/tag/'+tag)=tag
 
 mixin post-title(post)
-    h2
+    h3
         a(href=post.url)= post.title
 
-mixin post-preview(post, hideDate)
+mixin post-preview(post, options)
     .post-container
         +post-title(post)
-        if !hideDate
+        if !options.hidePreview
             .post-preview!= post.preview
-        +post-footer(post, hideDate)
+        +post-footer(post, options.hideDate)

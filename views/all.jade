@@ -2,5 +2,5 @@ extends ./layout.jade
 include ./mixins/posts
 
 block content
-    each post in blogs
-        +post-preview(post)
+  each post in blogs
+    +post-preview(post, {hidePreview: false})

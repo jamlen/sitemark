@@ -1,7 +1,37 @@
 tags: communities hattersley
-title: Article 005
-preview: Some long text with __formatting__.
-date: 2014-04-09
-
+title: Hermite Spaces and Maximality
+preview: It all started when our predictably heroic hero, ___Bill Brasky___, woke up in a imaginery desert. It was the fourth time it had happened...
+date: 2014-06-09
+image: http://img1.wikia.nocookie.net/__cb20100810183425/familyguy/images/2/2f/Lobot.png
 ---
-# Fresh hope in Glossop bypass battle
+
+   It all started when our predictably heroic hero, Bill Brasky, woke up in a imaginery desert. It was the fourth time it had happened. Feeling excessively frustrated, Bill Brasky slapped a gerbil, thinking it would make him feel better (but as usual, it did not). In a tragically predictable turn of events, he realized that his beloved iPad was missing!  Immediately he called his overtly elitist, rich friend, Leroy Jenkins. Bill Brasky had known Leroy Jenkins for (plus or minus) 1.2 billion years, the majority of which were electric ones.  Leroy Jenkins was unique. She was plucky though sometimes a little... insensitive. Bill Brasky called her anyway, for the situation was urgent.
+
+   Leroy Jenkins picked up to a very ecstatic Bill Brasky. Leroy Jenkins calmly assured him that most man-eating capybaras panic before mating, yet albino cats usually wildly shudder *after* mating. She had no idea what that meant; she was only concerned with distracting Bill Brasky.  Why was Leroy Jenkins trying to distract Bill Brasky?  Because she had snuck out from Bill Brasky's with the iPad only four days prior.  It was a flamboyant little iPad... how could she resist?
+
+   It didn't take long before Bill Brasky got back to the subject at hand: his iPad. Leroy Jenkins yawned. Relunctantly, Leroy Jenkins invited him over, assuring him they'd find the iPad. Bill Brasky grabbed his giraffe and disembarked immediately. After hanging up the phone, Leroy Jenkins realized that she was in trouble. She had to find a place to hide the iPad and she had to do it aptly. She figured that if Bill Brasky took the best-in-its-so-called-'class' sedan, she had take at least nine minutes before Bill Brasky would get there.  But if he took the Segway?  Then Leroy Jenkins would be ridiculously screwed.
+
+   Before she could come up with any reasonable ideas, Leroy Jenkins was interrupted by five annoying marmots that were lured by her iPad. Leroy Jenkins panicked; 'Not again', she thought. Feeling displeased, she recklessly reached for her wolverine and fearlessly punched every last one of them. Apparently this was an adequate deterrent--the discouraged critters began to scurry back toward the foxy forest, squealing with discontent. She exhaled with relief.  That's when she heard the Segway rolling up.  It was Bill Brasky.
+
+----
+
+   As he pulled up, he felt a sense of urgency. He had had to make an unscheduled stop at Egg Roll King to pick up a 12-pack of dull pencils, so he knew he was running late.  With a apt leap, Bill Brasky was out of the Segway and went wildly jaunting toward Leroy Jenkins's front door.  Meanwhile inside,  Leroy Jenkins was panicking.  Not thinking, she tossed the iPad into a box of live hand grenades and then slid the box behind her George Foreman grill. Leroy Jenkins was worried but at least the iPad was concealed.  The doorbell rang.
+
+   'Come in,' Leroy Jenkins earnestly purred.  With a quick push, Bill Brasky opened the door.  'Sorry for being late, but I was being chased by some dimwitted beer-sloshed tool in a hippie-pleasing hybrid vehicle,' he lied.  'It's fine,' Leroy Jenkins assured him. Bill Brasky took a seat wonderfully far from where Leroy Jenkins had hidden the iPad. Leroy Jenkins sneezed trying unsuccessfully to hide her nervousness.  'Uhh, can I get you anything?' she blurted.  But Bill Brasky was distracted. In a tragically predictable turn of events, Leroy Jenkins noticed a annoying look on Bill Brasky's face. Bill Brasky slowly opened his mouth to speak.
+
+   '...What's that smell?'
+
+   Leroy Jenkins felt a stabbing pain in her taint when Bill Brasky asked this.  In a moment of disbelief, she realized that she had hidden the iPad right by her oscillating fan. 'Wh-what?  I don't smell anything..!'  A lie.  A dimwitted look started to form on Bill Brasky's face. He turned to notice a box that seemed clearly out of place. 'Th-th-those are just my grandma's potatos from when she used to have pet venomous koalas.  She, uh...dropped 'em by here earlier'. Bill Brasky nodded with fake acknowledgement...then, before Leroy Jenkins could react, Bill Brasky randomly lunged toward the box and opened it.  The iPad was plainly in view.
+
+   Bill Brasky stared at Leroy Jenkins for what what must've been eight microseconds. In a tragically predictable turn of events, Leroy Jenkins groped wildly in Bill Brasky's direction, clearly desperate. Bill Brasky grabbed the iPad and bolted for the door.  It was locked. Leroy Jenkins let out a flamboyant chuckle. 'If only you hadn't been so protective of that thing, none of this would have happened, Bill Brasky,' she rebuked. Leroy Jenkins always had been a little pestering, so Bill Brasky knew that reconciliation was not an option; he needed to escape before Leroy Jenkins did something crazy, like... start chucking live hand grenades at her or something. A few unfulfilled decades later, he gripped his iPad tightly and made a dash toward the window, diving headlong through the glass panels.
+
+   Leroy Jenkins looked on, blankly. 'What the hell?  That seemed excessive.  The other door was open, you know.' Silence from Bill Brasky. 'And to think, I varnished that window frame eight days ago...it never ends!' Suddenly she felt a tinge of concern for Bill Brasky. 'Oh.  You ..okay?' Still silence. Leroy Jenkins walked over to the window and looked down. Bill Brasky was gone.
+
+-------
+
+   Just yonder, Bill Brasky was struggling to make his way through the fanstic pumpkin patch behind Leroy Jenkins's place. Bill Brasky had severely hurt his armpit during the window incident, and was starting to lose strength.  Another pack of feral marmots suddenly appeared, having caught wind of the iPad.  One by one they latched on to Bill Brasky.  Already weakened from his injury, Bill Brasky yielded to the furry onslaught and collapsed.  The last thing he saw before losing consciousness was a buzzing horde of marmots running off with his iPad.
+
+   About three hours later, Bill Brasky awoke, his ear throbbing.  It was dark and Bill Brasky did not know where he was.  Deep in the lonely secret vineyard, Bill Brasky was scarcely lost. As if it really mattered he remembered that his iPad was taken by the marmots. But at that point, he was just thankful for his life.  That's when, to his horror, a teensy marmot emerged from the secret vineyard.  It was the alpha marmot. Bill Brasky opened his mouth to scream but was cut short when the marmot sunk its teeth into Bill Brasky's prostate. With a faint groan, the life escaped from Bill Brasky's lungs, but not before he realized that he was a failure.
+
+   Less than five miles away, Leroy Jenkins was entombed by anguish over the loss of the iPad.  'MY PRECIOUS!!' she cried, as she reached for a sharpened live hand grenade.  With a calculated thrust, she buried it deeply into her love handle.  As the room began to fade to black, she thought about Bill Brasky... wishing she had found the courage to tell him that she loved him.  But she would die alone that day.  All that remained was the iPad that had turned them against each other, ultimately causing their demise.  And as the dew on melancholy sappling branches began to reflect the dawn's reddish glare, all that could be heard was the chilling cry of distant marmots, desecrating all things sacred to virtuous men, and perpetuating an evil that would reign for centuries to come.  Our heroes would've lived unhappily ever after, but they were too busy being dead.  So, no one lived forever after, the end. :'(
+

@@ -2,7 +2,7 @@ extend ./layout.jade
 include mixins/posts
 
 block content
-    .post-container
-        +post-title(blog)
-        .post!= blog.post
-        +post-footer(blog)
+  .post-container
+    +post-title(blog)
+    .post!= blog.post
+    +post-footer(blog)

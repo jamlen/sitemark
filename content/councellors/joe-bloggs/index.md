@@ -13,4 +13,4 @@ Labore in eu reprehenderit excepteur aliqua eiusmod ad sunt. Occaecat pariatur e
 ---
 section: image
 ===
-![](http://img1.wikia.nocookie.net/__cb20100810183425/familyguy/images/2/2f/Lobot.png 'Lobot')
+![](https://avatars3.githubusercontent.com/u/3593671?v=3&s=400 'Lobot')
