@@ -1,6 +1,6 @@
 'use strict';
 
-var should = require('should');
+var _ = require('lodash');
 var path = require('path');
 var moment = require('moment');
 var Articles = require('../lib/blogs');
@@ -33,10 +33,9 @@ describe('Building Article List', function() {
             preview: '<p>Test Preview Text</p>\n',
             url: '/section1/subsection1/test',
             path: '/section1/subsection1',
-            date: moment('2014-05-24', 'YYYY-MM-dd'),
-            relativeDate: '5 months ago'
+            date: moment('2014-05-24', 'YYYY-MM-dd')
         };
-        articles[0].should.eql(expected);
+        _.omit(articles[0], 'relativeDate').should.eql(expected);
     });
 
     it('Ignores articles that do not have required metadata');

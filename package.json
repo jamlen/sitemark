@@ -33,13 +33,13 @@
   },
   "scripts": {},
   "devDependencies": {
+    "colors": "~0.6.2",
     "gulp": "~3.8.8",
-    "gulp-watch": "~1.0.7",
+    "gulp-coveralls": "~0.1.3",
+    "gulp-istanbul": "~0.3.1",
     "gulp-jshint": "~1.8.5",
     "gulp-mocha": "~1.1.0",
-    "colors": "~0.6.2",
-    "should": "~4.0.4",
-    "gulp-coveralls": "~0.1.3",
-    "gulp-istanbul": "~0.3.1"
+    "gulp-watch": "~1.0.7",
+    "should": "~4.0.4"
   }
 }
