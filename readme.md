@@ -157,3 +157,7 @@ node sitemark.js
 ```
 
 Now hit `http://localhost:9111` and you should be running your own sitemark website.
+
+## License
+Copyright (c) 2014-2019 James Allen (jamlen)
+Licensed under the MIT license.
